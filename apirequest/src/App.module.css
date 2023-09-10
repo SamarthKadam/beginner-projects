@@ -1,0 +1,264 @@
+.App {
+  /* height: 100vh; */
+  height: 100%;
+  width: 100%;
+  margin: 0%;
+  background-color: #D9E8E5;
+  /* background: linear-gradient(to right, #4e54c8, #8f94fb); */
+}
+
+.NavBarPar {
+  display: flex;
+  height: 5em;
+  width: 100vw;
+  justify-content: center;
+  align-items: center;
+}
+
+.Navbar {
+  height: 4em;
+  width: 94vw;
+  border-radius: 1em;
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  box-sizing: border-box;
+  padding: 0px 7em;
+}
+
+.icon {
+  height: 3em;
+}
+
+.OneNav {
+  display: flex;
+  align-items: center;
+}
+
+.texticon {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 19px;
+  font-weight: 500;
+  margin-left: .5em;
+  color: #383838;
+}
+
+.List {
+  list-style: none;
+  padding: 0%;
+  display: flex;
+  position: relative;
+  text-align: bottom;
+}
+
+.List li {
+  cursor: pointer;
+  margin: .7em;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  color: #2D2D2D;
+  font-weight: 600;
+}
+
+button {
+  padding: .5em;
+  background-color: #2196F3;
+  color: white;
+  border: 0px;
+  cursor: pointer;
+  border-radius: 2px;
+  font-size: 15px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.section {
+  position: relative;
+  background-color: #D9E8E5;
+  /* height: 83vh; */
+  height: 100%;
+  margin: 1em auto;
+  box-sizing: border-box;
+  padding: 1em 8em;
+  /* width: 94vw; */
+  width: 100%;
+  display: grid;
+  grid-gap: 10px;
+  justify-items: center;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  animation-name: Fadein;
+  animation-duration: .5s;
+  animation-timing-function: linear;
+}
+
+@keyframes Fadein {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.list {
+  /* height: 15em; */
+  height: 100%;
+  width: 100%;
+  /* width: 15em; */
+  position: relative;
+  background-color: #FFFFFF;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  box-sizing: border-box;
+  /* padding-top: .5em; */
+  padding: 0.5em 1.5em .5em 1.5em;
+}
+
+.coverImg {
+  width: 8em;
+  height: 8em;
+  border-radius: 50%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.userName {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  margin-top: .5em;
+  color: #383838;
+}
+
+.email {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: 500;
+  font-size: 13px;
+  margin-top: .5em;
+  margin-bottom: .8em;
+  color: #919191;
+}
+
+.heart {
+  position: absolute;
+  top: 8%;
+  left: 85%;
+  font-size: 25px;
+  color: #83BFF2;
+}
+
+.loader {
+  border: 10px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 10px solid #3498db;
+  width: 30px;
+  height: 30px;
+  -webkit-animation: spin 2s linear infinite;
+  /* Safari */
+  animation: spin 2s linear infinite;
+}
+
+/* Safari */
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.loaderDiv {
+  width: 100%;
+  height: 100%;
+  padding: 18% 0em 18% 0em;
+  display: flex;
+  background-color: #FFFFFF;
+  justify-content: center;
+  align-items: center;
+}
+
+.nextPage {
+  position: absolute;
+  top: 90%;
+  transform: translateY(-90%);
+  padding: .5em .7em;
+  background-color: #2196F3;
+  color: whitesmoke;
+  left: 97%;
+  transform: translateX(-97%);
+  cursor: pointer;
+}
+
+.iconColor {
+  color: white;
+  font-size: 12px;
+}
+
+@media (max-width:998px) {
+  .List {
+    display: none;
+  }
+
+  .section {
+    padding: 1em 5em;
+  }
+
+}
+
+@media (max-width:777px) {
+  .section {
+    padding: 1em 5em;
+  }
+
+  body {
+    font-size: 13px;
+  }
+
+}
+
+@media (max-width:725px) {
+  .section {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  body {
+    font-size: 13px;
+  }
+
+}
+
+@media (max-width:519px) {
+  .section {
+    grid-template-columns: 1fr;
+  }
+
+  body {
+    font-size: 13px;
+  }
+
+}
+@media (max-width:469px) {
+  body {
+    font-size: 11px;
+  }
+  .Navbar{
+    padding:0px 3em;
+  }
+
+}

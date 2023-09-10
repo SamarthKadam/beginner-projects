@@ -1,0 +1,267 @@
+body {
+    font-size: 16px;
+    height: 100vh;
+    background-color: #DFDFDF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0%;
+    user-select: none;
+}
+
+.grid {
+    height: 90vh;
+    width: 90vw;
+    border-radius: 3em;
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+}
+
+.form {
+    background-color: #ffffff;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    padding: 3em 7em;
+    display: flex;
+    flex-flow: column;
+}
+
+.content {
+    background-color: #FFFFFF;
+    height: 100%;
+    width: 100%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    /* overflow-y: scroll; */
+    /* display: flex;
+    overflow: hidden;
+    flex-flow: column;
+    align-items: center; */
+}
+.content::-webkit-scrollbar {
+    display: none;
+  }
+
+.icon-img {
+    margin-top: 6em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 12em;
+    border-radius: 50%;
+    background-color: #FEAD04;
+    width: 12em;
+
+}
+
+.icon {
+    height: 7em;
+}
+
+.text {
+    font-family: sans-serif;
+    color: #36383A;
+    font-size: 28px;
+}
+
+p {
+    font-family: sans-serif;
+    color: #36383A;
+    font-size: 19px;
+    text-align: center;
+    padding: 0px 3em;
+}
+
+.Next-icon {
+    height: 3.4em;
+    cursor: pointer;
+}
+
+.nameTag,
+.GenderTag,
+.Dobtag,
+.Emailtag,
+.MobileTag {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin: .5em;
+    color: #36383A;
+    justify-content: space-between;
+}
+
+.input_name,
+.input_date,
+.input_email,
+.input_number {
+    width: 70%;
+    height: 2.4em;
+}
+
+.input_date {
+    font-family: sans-serif;
+    color: #b3b3b3;
+}
+
+.commen {
+    outline: 0px;
+    font-size: 18px;
+    box-sizing: border-box;
+    padding: 5px 5px;
+    outline-color: #FED501;
+    border: solid 0px #719ECE;
+    background-color: #F6F7F9;
+}
+
+.genderCont {
+    height: 2em;
+}
+
+.icon-handler {
+    width: 70%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.femaleparent,
+.maleparent {
+    height: 3em;
+    border-radius: 50%;
+    width: 3em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #F6F7F9;
+}
+
+.Name,
+.Gender,
+.Dob,
+.Email,
+.Mobile {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 600;
+    color: #686868;
+    font-size: 20px;
+}
+
+.SubmitSection {
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 3.5em;
+}
+
+.styling {
+    border: 0px;
+    padding: .5em 1.8em;
+    cursor: pointer;
+}
+
+.button1 {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 18px;
+    color: #686868;
+}
+
+.button2 {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 18px;
+    color: whitesmoke;
+    background-color: #5EE7C5;
+}
+
+.animate {
+    animation-name: moving;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+}
+
+@keyframes moving {
+    from {}
+
+    to {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+}
+
+.firstPart {
+    position: relative;
+    background-color: #FED501;
+    display: flex;
+    height: 100%;
+    width: 100%;
+    flex-flow: column;
+    align-items: center;
+}
+
+
+.header {
+    background-color: #2AB37C;
+    font-family: sans-serif;
+    font-weight: 500;
+    font-size: 28px;
+    padding: .5em .8em;
+    color: white;
+    width: 100%;
+
+}
+
+.secondPart {
+    display: flex;
+    flex-flow: column;
+}
+
+.hidden {
+    display: none;
+}
+
+.users {
+    margin: 1em .3em 1em .3em;
+    height: 100%;
+    width: 100%;
+    padding: 0.5em .8em;
+    /* background-color: #E3E9ED; */
+    display: flex;
+    border-bottom: solid 1px #dadada;
+}
+
+.details {
+    margin-left: .5em;
+    display: flex;
+    flex-flow: column;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.logo-person {
+    height: 4em;
+}
+
+.name {
+    font-weight: 600;
+    color: #21394F;
+    margin-bottom: .3em;
+}
+
+.email-phone {
+    display: flex;
+    align-items: center;
+    margin-bottom: .3em;
+}
+
+.email-icon {
+    height: 1em;
+    margin: .3em;
+}
+
+.phone-icon {
+    margin: .3em;
+    height: 1em;
+}
+
+.view-details {
+    color: #2AB37C;
+    font-weight: 600;
+}
